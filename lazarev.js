@@ -37,4 +37,29 @@ nav.addEventListener("mouseleave", ()=>{
     
 })
 }
-navAnimation()
+
+function page2Anim(){
+    let rightElem = document.querySelectorAll(".right-elem")
+rightElem.forEach((elem)=>{
+elem.addEventListener("mouseenter", ()=>{
+    gsap.to( elem.childNodes[3], {
+        opacity: 1,
+        scale: 1
+    })
+})
+elem.addEventListener("mouseleave", ()=>{
+     gsap.to( elem.childNodes[3], {
+        opacity: 0,
+        scale: 0
+    })
+})
+elem.addEventListener("mousemove", (dets)=>{
+    gsap.to(elem.childNodes[3], {
+        x: dets.x - elem.getBoundingClientRect().x-50,
+        y: dets.y - elem.getBoundingClientRect().y-150
+    })
+})
+})
+}
+// navAnimation()
+// page2Anim()
