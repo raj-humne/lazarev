@@ -61,5 +61,29 @@ elem.addEventListener("mousemove", (dets)=>{
 })
 })
 }
-// navAnimation()
-// page2Anim()
+function page3VideoAnim(){
+    let page3Center = document.querySelector(".page3-center")
+let video = document.querySelector(".page3 video")
+page3Center.addEventListener("click", ()=>{
+    video.play()
+    gsap.to(video, {
+        transform:"scaleX(1) scaleY(1)",
+        opacity: 1,
+        borderRadius: 0
+    })
+})
+video.addEventListener("click", ()=>{
+    video.pause()
+})
+video.addEventListener("dblclick", ()=>{
+    video.pause()
+     gsap.to(video, {
+        transform:"scaleX(.7) scaleY(0)",
+        opacity: 0,
+        borderRadius: "30px"
+    })
+})
+}
+page3VideoAnim()
+navAnimation()
+page2Anim()
