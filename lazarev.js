@@ -84,6 +84,20 @@ video.addEventListener("dblclick", ()=>{
     })
 })
 }
+
+let sections = document.querySelectorAll(".sec-right")
+sections.forEach((elem)=>{
+    elem.addEventListener("mouseenter", ()=>{
+
+        elem.childNodes[3].style.opacity = 1
+        elem.childNodes[3].play()
+    })
+     elem.addEventListener("mouseleave", ()=>{
+
+        elem.childNodes[3].style.opacity = 0
+        elem.childNodes[3].load()
+    })
+})
 page3VideoAnim()
-navAnimation()
+// navAnimation()
 page2Anim()
