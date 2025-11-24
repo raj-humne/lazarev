@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
-    
+    cursor: default;
     color: white;
 }
 html, body{
@@ -92,6 +92,7 @@ nav{
 }
 .nav-pt2 h4{
     font-size: 0.8vw;
+    cursor: pointer;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 2.3vw;
@@ -106,6 +107,7 @@ nav{
 .nav-pt2 h5 span{
     font-size: .85vw;
     /* background-color: green; */
+    cursor: pointer;
     font-weight: 300;
     display: inline-block;
     transform: translateY(25px);
@@ -141,6 +143,9 @@ nav{
     display: inline-block;
     opacity: 0;
 }
+nav h1{
+    cursor:default;
+}
 nav button{
     background-color: #0ba34e;
     display: flex;
@@ -150,6 +155,7 @@ nav button{
     font-size: .85vw;
     text-transform: uppercase;
     font-weight: 700;
+    cursor: pointer;
     padding: 12px 14px;
     border-radius: 50px;
 }
@@ -439,7 +445,7 @@ nav:hover .nav-bottom{
 .sec-right{
     height: 70vh;
     transform: translateY(-8%);
-    background-color: blue;
+    /* background-color: blue; */
     width: 70%;
     position: relative;
 }
@@ -457,4 +463,109 @@ nav:hover .nav-bottom{
     opacity: 0;
     object-fit: cover;
     transition: opacity ease 0.3s;
+}
+.page-7{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    padding: 5vh 10.5vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.page-7 button{
+    background-color: #0ba34e;
+    padding: 0.9vw 2.5vw;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 1vw;
+}
+.pg7-right{
+    width: 70%;
+}
+.pg7-right>p{
+    font-size: 2.1vw;
+}
+.pg7-right>p span{
+    /* background-color: red; */
+    width: 12vw;
+    display: inline-block;
+}
+.pg-7content{
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 5vh;
+    padding: 5vh 0;
+    border-top: 2px solid white;
+}
+.pg-7content h1{
+    font-size: 3vw;
+}
+.pg-7content .flex{
+    display: flex;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+.pg-7content .flex h4{
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: .8vw;
+}
+.pg7elem{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: red; */
+    padding-top: 3vh;
+    padding-bottom: 9vh;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #1f1f1f;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1) all;
+}
+.pg7elem p{
+    font-size: .8vw;
+    width: 55%;
+    position: relative;
+    z-index: 8;
+}
+.pg7elem h3{
+    font-size: 1.6vw;
+    font-weight: 400;
+    position: relative;
+    z-index: 8;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1) all;
+}
+.pg7elem i{
+font-size: 1vw;
+    position: relative;
+    z-index: 8;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1) all;
+}
+.over{
+    height: 100%;
+    width: 100%;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    opacity:0;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1) all;
+}
+.pg7elem:hover h3{
+    padding-left: 1vw;
+}
+.pg7elem:hover i{
+    padding-right: 1vw;
+}
+.pg7elem:hover .over{
+    transform: translateY(0);
+    opacity: 1;
+}
+.pg7elem:hover{
+    border-top: 2px solid #dadada;
 }
