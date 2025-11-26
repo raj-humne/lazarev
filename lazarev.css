@@ -585,8 +585,35 @@ summary::marker{
     border-top: 1px solid #333;
     padding: 3vh 0;    
 }
+/*complete page 7 list open close icon tag*/
 .page8{
     height: 100vh;
     width: 100%;
     background-color: white;
+    padding: 10vh 10vw;
+}
+.page8>h1{
+    font-size: 5vw;
+    padding-left: 23vw;
+    padding-right: 5vw;
+    line-height: 5.8vw;
+    color: black;
+    /* background-color: red; */
+    padding-bottom: 10vh;
+    border-bottom: 2px solid #dadada;
+}
+.page8-content{
+    background-color: red;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.page8-content .right-8{
+    width: 70%;
+}
+.page8-content .right-8 p{
+    color: black;
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
+    width: 80%;
 }
