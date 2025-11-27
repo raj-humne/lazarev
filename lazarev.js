@@ -98,6 +98,13 @@ sections.forEach((elem)=>{
         elem.childNodes[3].load()
     })
 })
+var upArr = document.querySelectorAll(".arrow")
+upArr.forEach(arrow=>{
+arrow.addEventListener("click", ()=>{
+arrow.children[1].classList.toggle("active")
+})
+})
+
 page3VideoAnim()
 // navAnimation()
 page2Anim()
