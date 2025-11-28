@@ -599,7 +599,7 @@ summary::marker{
 }
 /*complete page 7 list open close icon tag*/
 .page8{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: white;
     padding: 10vh 10vw;
@@ -615,10 +615,11 @@ summary::marker{
     border-bottom: 2px solid #dadada;
 }
 .page8-content{
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-top: 2vw;
 }
 .page8-content .right-8{
     width: 70%;
@@ -628,4 +629,37 @@ summary::marker{
     font-size: 1.5vw;
     margin-bottom: 5vh;
     width: 80%;
+}
+.blue-btn{
+    background-color: #4f5bff;
+    width: 15vw;
+    height: 3.5vw;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.blue-btn h4{
+    position: absolute;
+    font-weight: 600;
+    font-size: .85vw;
+}
+.blue-btn h4 i{
+    font-weight: 100;
+    font-size: 1.1vw;
+    margin-left: .5vw;
+}
+.bottom-8{
+height: 45vh;
+width: 100%;
+background-color: red;
+border-top: 1px solid #dadada;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+
+}
+.btm8-p1{
+    border-radius: 1px solid #dadada;
 }
