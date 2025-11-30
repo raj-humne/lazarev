@@ -653,7 +653,7 @@ summary::marker{
 .bottom-8{
 height: 45vh;
 width: 100%;
-background-color: red;
+background-color: rgb(68, 62, 62);
 border-top: 1px solid #dadada;
 display: flex;
 align-items: flex-start;
@@ -661,5 +661,64 @@ justify-content: center;
 
 }
 .btm8-p1{
-    border-radius: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    width: 30%;
+    height: 100%;
+    background-color: red;
+}
+.btm8-p2{
+    border-right: 1px solid #dadada;
+    width: 28%;
+    height: 100%;
+    background-color: red;
+}
+.btm8-p3{
+    border-right: 1px solid #dadada;
+    width: 15%;
+    height: 100%;
+    background-color: red;
+}
+.btm8-p4{
+    border-right: 1px solid #dadada;
+    width: 15%;
+    height: 100%;
+    background-color: red;
+}
+.btm8-p5{
+    width: 15%;
+    height: 100%;
+    background-color: red;
+}
+.btm8pts{
+    padding: 3vh 0vh;
+}
+.btm8pts h5{
+    color: black;
+    font-weight: 500;
+    font-size: .85vw;
+    margin-bottom: 4vh;
+}
+.btm8pts h4{
+    background-color: black;
+    color: white;
+    width: 75%;
+    font-size: .85vw;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin-bottom: .3vh;
+}
+.btm8pts span{
+    background-color: #333;
+    color: white;
+    padding: .5vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: 1vw;
 }
