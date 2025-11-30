@@ -653,7 +653,7 @@ summary::marker{
 .bottom-8{
 height: 45vh;
 width: 100%;
-background-color: rgb(68, 62, 62);
+/* background-color: rgb(68, 62, 62); */
 border-top: 1px solid #dadada;
 display: flex;
 align-items: flex-start;
@@ -664,38 +664,38 @@ justify-content: center;
     border-right: 1px solid #dadada;
     width: 30%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 .btm8-p2{
     border-right: 1px solid #dadada;
     width: 28%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 .btm8-p3{
     border-right: 1px solid #dadada;
     width: 15%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 .btm8-p4{
     border-right: 1px solid #dadada;
     width: 15%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 .btm8-p5{
     width: 15%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 .btm8pts{
-    padding: 3vh 0vh;
+    padding: 3vh .6vw;
 }
 .btm8pts h5{
     color: black;
     font-weight: 500;
-    font-size: .85vw;
+    font-size: .9vw;
     margin-bottom: 4vh;
 }
 .btm8pts h4{
@@ -721,4 +721,7 @@ justify-content: center;
     width: 1.5vw;
     height: 1.5vw;
     margin-right: 1vw;
+}
+.page-9{
+    height: 100vh;
 }
