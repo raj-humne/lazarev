@@ -1,3 +1,47 @@
+function locomotiveAnimation(){
+    gsap.registerPlugin(ScrollTrigger);
+
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector("main"),
+  smooth: true,
+
+  // for tablet smooth
+  tablet: { smooth: true },
+
+  // for mobile
+  smartphone: { smooth: true }
+});
+locoScroll.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy("main", {
+  scrollTop(value) {
+    return arguments.length
+      ? locoScroll.scrollTo(value, 0, 0)
+      : locoScroll.scroll.instance.scroll.y;
+  },
+  getBoundingClientRect() {
+    return {
+      top: 0,
+      left: 0,
+      width: window.innerWidth,
+      height: window.innerHeight
+    };
+  }
+
+  // follwoing line is not required to work pinning on touch screen
+
+  /* pinType: document.querySelector(".smooth-scroll").style.transform
+    ? "transform"
+    : "fixed"*/
+});
+
+
+
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+ScrollTrigger.refresh();
+
+}
 function navAnimation(){
     var nav = document.querySelector("nav")
 nav.addEventListener("mouseenter", ()=>{
@@ -111,7 +155,7 @@ gsap.from(".btm8-p2 h4", {
     duration:1,
     scrollTrigger:{
         trigger: ".btm8-p2",
-        scroller:"body",
+        scroller:"main",
         // markers: true,
         start:"top 80%",
         end: "top 10%",
@@ -119,7 +163,9 @@ gsap.from(".btm8-p2 h4", {
     }
 })
 }
+locomotiveAnimation()
 page8Animations()
 page3VideoAnim()
+
 // navAnimation()
 page2Anim()
