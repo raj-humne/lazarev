@@ -722,6 +722,24 @@ justify-content: center;
     height: 1.5vw;
     margin-right: 1vw;
 }
+.btm8-p2 h4:nth-child(2){
+    transform: translateX(0);
+}
+.btm8-p2 h4:nth-child(3){
+    transform: translateX(10%);
+}
+.btm8-p2 h4:nth-child(4){
+    transform: translateX(20%);
+}
+.btm8-p2 h4:nth-child(5){
+    transform: translateX(30%);
+}
+.btm8-p2 h4:nth-child(6){
+    transform: translateX(40%);
+}
+.btm8-p2 h4:nth-child(7){
+    transform: translateX(50%);
+}
 .page-9{
     height: 100vh;
 }

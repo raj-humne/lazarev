@@ -104,21 +104,22 @@ arrow.addEventListener("click", ()=>{
 arrow.children[1].classList.toggle("active")
 })
 })
-gsap.to(".btm8-p2 h4", {
-    x:150,
-    duration: 1,
-    stagger:{
-amount:-0.5
-    },
+function page8Animations(){
+
+gsap.from(".btm8-p2 h4", {
+    x:0,
+    duration:1,
     scrollTrigger:{
-        trigger:".btm8-p2 h4",
+        trigger: ".btm8-p2",
         scroller:"body",
-        markers:true,
-        start: "top 95%",
-        end: "top -50%",
+        // markers: true,
+        start:"top 80%",
+        end: "top 10%",
         scrub:true
     }
 })
+}
+page8Animations()
 page3VideoAnim()
 // navAnimation()
 page2Anim()
